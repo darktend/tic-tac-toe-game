@@ -1,5 +1,16 @@
-import ReactDOM from "@types/react-dom/client";
-import React from "@types/react";
+import React from "react";
+import Board from "./components/Board/Board";
+import Game from "./components/Game/Game";
+import './index.css';
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Game />);
+
+const App=()=>{
+    return(
+    <div>
+        <Board />
+        <Game />
+    </div>
+    )
+}
+
+export default App;
